@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MathTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2015-12-14T12:25:44" hostname="UNIT-539" time="45.009">
+  <properties/>
+  <testcase name="testAddZero" classname="MathTest" time="5.002"/>
+  <testcase name="testAdd" classname="MathTest" time="5.001"/>
+  <testcase name="testSub" classname="MathTest" time="5.0"/>
+  <testcase name="testAgentName" classname="MathTest" time="0.0"/>
+  <testcase name="testAddNeg_ShouldFail" classname="MathTest" time="5.001"/>
+  <testcase name="testFailedSub1" classname="MathTest" time="5.001"/>
+  <testcase name="testFailedAdd" classname="MathTest" time="5.001"/>
+  <testcase name="testFailedSub" classname="MathTest" time="5.0"/>
+  <testcase name="testAdd_ShouldFail" classname="MathTest" time="5.001"/>
+  <testcase name="testAddNeg" classname="MathTest" time="0.0"/>
+  <testcase name="testSubNeg" classname="MathTest" time="5.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
