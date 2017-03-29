@@ -11,8 +11,18 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }
 
+
+tasks.withType(Test) {
+    it.outputs.upToDateWhen { false } // force gradle to always re-run test tasks
+    it.testLogging.showStandardStreams = true
+}
+
 task testProperties << {
     println test1
     println test2
     println test3
+}
+
+task testEnvProperties (type: Test) {
+    include "EnvPropertiesTest.class"
 }
