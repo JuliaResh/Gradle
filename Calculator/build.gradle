@@ -27,7 +27,7 @@ task testEnvProperties (type: Test) {
     include "EnvPropertiesTest.class"
 }
 
-for (i in 1..100000) {
+for (i in 1..10000) {
     task "test$i" (type: JavaCompile) {
         outputs.upToDateWhen { false }
         doLast {
