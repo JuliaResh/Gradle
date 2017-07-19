@@ -26,3 +26,20 @@ task testProperties << {
 task testEnvProperties (type: Test) {
     include "EnvPropertiesTest.class"
 }
+
+for (i in 1..1000) {
+    task "test$i" (type: JavaCompile) {
+        outputs.upToDateWhen { false }
+        doLast {
+            println System.currentTimeMillis()
+            println 'complete'
+        }
+        source = fileTree(dir: 'src', include: 'main/java/Calculation.java')
+        destinationDir = file('test')
+        classpath = files('build/classes/main')
+    }
+}
+
+task all {
+    dependsOn allprojects.collect { it.tasks.withType(JavaCompile) }
+}
