@@ -28,7 +28,7 @@ task testEnvProperties (type: Test) {
 }
 
 def limit = project.hasProperty("limit") ? project.getProperty("limit") : 100
-for (i in 1..limit) {
+for (i in 1..limit.toInteger()) {
     task "test$i" (type: JavaCompile) {
         outputs.upToDateWhen { false }
         doLast {
