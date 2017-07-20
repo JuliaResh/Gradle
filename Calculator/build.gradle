@@ -34,7 +34,7 @@ for (i in 1..limit) {
         doLast {
             println System.currentTimeMillis()
             for (n in 1..100) {
-              prinlnt "some output $n"
+              println "some output $n"
             }
             println 'complete'
         }
