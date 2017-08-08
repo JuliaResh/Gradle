@@ -13,7 +13,7 @@ test.dependsOn "testParallelInstances", "testParallelMethods"
 task testParallelInstances(type: Test) {
     useTestNG() {
         parallel "instances"
-        threadCount 2
+        threadCount 3
         include "MyTestFactory.class"
     }
 }
