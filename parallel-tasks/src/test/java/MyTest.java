@@ -1,44 +1,48 @@
-import org.testng.ITest;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Factory;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-
-public class MyTest implements ITest {
-
-    private int id;
-    private String name;
-
-    @DataProvider
-    public static Iterator<Object[]> data() {
-        List<Object[]> testData = new ArrayList<>();
-
-        for (int i=0; i<10; i++) {
-            testData.add(new Object[] { i });
-        }
-
-        return testData.iterator();
-    }
-
-    @Factory (dataProvider = "data")
-    public MyTest(int id) {
-        this.id = id;
-        this.name = "test_" + id;
-    }
+/**
+ * Created by Julia.Reshetnikova on 08-Aug-17.
+ */
+public class MyTest {
 
     @Test
-    public void test() throws InterruptedException {
+    public void test1() throws InterruptedException {
         for (int i=0; i<10; i++) {
-            System.out.println("This is some test output from test #" + id);
+            System.out.println("This is some test output from test1");
             Thread.sleep((long)(Math.random() * 100));
         }
     }
 
-    @Override
-    public String getTestName() {
-        return this.name;
+    @Test
+    public void test2() throws InterruptedException {
+        for (int i=0; i<10; i++) {
+            System.out.println("This is some test output from test2");
+            Thread.sleep((long)(Math.random() * 100));
+        }
     }
+
+    @Test
+    public void test3() throws InterruptedException {
+        for (int i=0; i<10; i++) {
+            System.out.println("This is some test output from test3");
+            Thread.sleep((long)(Math.random() * 100));
+        }
+    }
+
+    @Test
+    public void test4() throws InterruptedException {
+        for (int i=0; i<10; i++) {
+            System.out.println("This is some test output from test4");
+            Thread.sleep((long)(Math.random() * 100));
+        }
+    }
+
+    @Test
+    public void test5() throws InterruptedException {
+        for (int i=0; i<10; i++) {
+            System.out.println("This is some test output from test5");
+            Thread.sleep((long)(Math.random() * 100));
+        }
+    }
+
 }
