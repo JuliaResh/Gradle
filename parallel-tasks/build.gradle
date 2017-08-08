@@ -10,6 +10,8 @@ dependencies {
 
 test {
     useTestNG() {
+        parallel "instances"
+        threadCount 5
         include "MyTest.class"
     }
 }
