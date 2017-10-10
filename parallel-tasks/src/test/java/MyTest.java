@@ -1,5 +1,7 @@
 import org.testng.annotations.Test;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 /**
  * Created by Julia.Reshetnikova on 08-Aug-17.
  */
@@ -38,11 +40,12 @@ public class MyTest {
     }
 
     @Test
-    public void test5() throws InterruptedException {
+    public void test5_shouldFail() throws InterruptedException {
         for (int i=0; i<10; i++) {
             System.out.println("This is some test output from test5");
             Thread.sleep((long)(Math.random() * 100));
         }
+        assertThat(true).isEqualTo(false)
     }
 
 }
