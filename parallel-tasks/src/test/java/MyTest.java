@@ -45,7 +45,7 @@ public class MyTest {
             System.out.println("This is some test output from test5");
             Thread.sleep((long)(Math.random() * 100));
         }
-        assertThat(true).isEqualTo(false)
+        assertThat(true).isEqualTo(false);
     }
 
 }
