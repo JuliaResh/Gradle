@@ -1,6 +1,5 @@
 import org.testng.annotations.Test;
-
-import static org.assertj.core.api.Assertions.assertThat;
+import org.testng.Assert;
 
 /**
  * Created by Julia.Reshetnikova on 08-Aug-17.
@@ -45,7 +44,7 @@ public class MyTest {
             System.out.println("This is some test output from test5");
             Thread.sleep((long)(Math.random() * 100));
         }
-        assertThat(true).isEqualTo(false);
+        Assert.fail("failed");
     }
 
 }
