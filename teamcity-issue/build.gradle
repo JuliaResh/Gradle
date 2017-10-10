@@ -1,0 +1,37 @@
+apply plugin: 'groovy'
+apply plugin: 'java'
+
+compileJava.options.encoding = 'UTF-8'
+
+allprojects {
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+}
+
+sourceSets {
+    main {
+        java { srcDir 'src' }
+        resources { srcDir 'src' }
+    }
+    test {
+        groovy { srcDir 'test' }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.4.11'
+    compile 'junit:junit:4.12'
+    compile 'org.spockframework:spock-core:1.1-groovy-2.4'
+}
+
+test {
+    systemProperties 'file.encoding': 'UTF-8'
+    maxParallelForks = 4
+    testLogging.showStandardStreams = true
+    testLogging { events 'passed' }
+    systemProperties = System.getProperties()
+}
