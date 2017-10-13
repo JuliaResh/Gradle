@@ -25,3 +25,9 @@ task testParallelMethods(type: Test) {
         include "MyTest.class"
     }
 }
+
+task testSuite(type: Test) {
+    useTestNG() {
+        suites "src/test/testng.xml"
+    }
+}

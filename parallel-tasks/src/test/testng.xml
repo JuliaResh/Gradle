@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="My Suite" verbose="1">
+    <test name="My Test">
+        <classes>
+            <class name="pack.MyTest"/>
+        </classes>
+    </test>
+</suite>
