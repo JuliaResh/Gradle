@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="My Suite" verbose="1">
-    <test name="My Test">
+<suite name="My Suite Nested" verbose="1">
+    <test name="My Test Nested">
         <classes>
             <class name="testng.MyTest"/>
         </classes>
