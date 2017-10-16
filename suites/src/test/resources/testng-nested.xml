@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="My Suite Nested" verbose="1" parallel="tests">
-    <test name="My Test Nested 1">
+<suite name="My Suite Nested" verbose="1">
+    <test name="My Test Nested">
         <classes>
             <class name="testng.MyTest"/>
-        </classes>
-    </test>
-    <test name="My Test Nested 2">
-        <classes>
-            <class name="testng.MyTest2"/>
-        </classes>
-    </test>
-    <test name="My Test Nested 3">
-        <classes>
-            <class name="testng.MyTest3"/>
         </classes>
     </test>
 </suite>
