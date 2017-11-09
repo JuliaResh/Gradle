@@ -1,5 +1,4 @@
 import org.testng.ITest;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Factory;
 import org.testng.annotations.Test;
 
@@ -7,15 +6,7 @@ public class TestFactory implements ITest {
 
     private String name;
 
-    @DataProvider
-    public static Object[][] data() {
-        return new Object[][] {
-                {"String with \n new line"},
-                {"String, with comma"}
-        };
-    }
-
-    @Factory(dataProvider = "data")
+    @Factory(dataProvider = "data", dataProviderClass = MyDataProvider.class)
     public TestFactory(String name) {
         this.name = name;
     }

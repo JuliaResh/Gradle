@@ -11,7 +11,7 @@ public class WithDataProvider {
         };
     }
 
-    @Test(dataProvider = "data")
+    @Test(dataProvider = "data", dataProviderClass = MyDataProvider.class)
     public void test(String str) {
         System.out.println(str);
         assert true;
