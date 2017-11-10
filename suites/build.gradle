@@ -13,7 +13,7 @@ test {
     ignoreFailures = true
     include '**/MathTestSuite.*'
 }
-test.finalizedBy("testMySuite", "testGradleSuite", "testParallelSuites")
+test.finalizedBy("testMySuite", "testGradleSuite")
 
 task testMySuite(type: Test) {
     useTestNG() {
