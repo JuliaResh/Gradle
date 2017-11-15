@@ -1,3 +1,5 @@
+package myPackage;
+
 public class Calculation {
 
     private static int value1 = 2;
