@@ -25,7 +25,7 @@ task testProperties << {
 }
 
 task testEnvProperties (type: Test) {
-    include "EnvPropertiesTest.class"
+    include "myPackage.EnvPropertiesTest.class"
 }
 
 def limit = project.hasProperty("limit") ? project.getProperty("limit").toInteger() : 100

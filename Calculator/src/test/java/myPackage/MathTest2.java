@@ -1,3 +1,5 @@
+package myPackage;
+
 import junit.framework.TestCase;
 
 public class MathTest2 extends TestCase {
