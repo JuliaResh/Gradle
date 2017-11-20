@@ -8,7 +8,23 @@ public class Calculation {
     private static int result2 = sub(value1, value2);
 
     public static int add(int a, int b) {
-        return a + b;
+        System.out.println("adding " + a + " and " + b);
+        int c = a + b;
+        c = a + b;
+        c = a + b;
+        c = a + b;
+        c = a + b;
+        return c;
+    }
+
+    public static int add_duplicate(int a, int b) {
+        System.out.println("adding " + a + " and " + b);
+        int c = a + b;
+        c = a + b;
+        c = a + b;
+        c = a + b;
+        c = a + b;
+        return c;
     }
 
     public static int sub(int a, int b) {
