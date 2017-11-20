@@ -90,16 +90,22 @@ public class MathTest extends TestCase {
         }
         assertNotSame(sum, total);
 	}
+
 	public void testSub() {
 		int total = 0;
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+		total = total + 1;
+        total = total - 1;
         int sub = Calculation.sub(4, 4);
 		assertEquals(sub, total);
 	}
+
+    public void testSub_Duplicate() {
+        int total = 0;
+        total = total + 1;
+        total = total - 1;
+        int sub = Calculation.sub(4, 4);
+        assertEquals(sub, total);
+    }
 
     public void testSubNeg() {
         int total = -4;
