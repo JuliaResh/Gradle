@@ -1,6 +1,7 @@
 package myPackage;
 
 import junit.framework.TestCase;
+import org.junit.Assert;
 
 public class MathTest2 extends TestCase {
 
@@ -60,6 +61,10 @@ public class MathTest2 extends TestCase {
         int total = -value1;
         int sub = Calculation.sub(-value1, 0);
         assertEquals(sub, total);
+    }
+
+    public void testEscape() {
+        Assert.fail("Failure message details: |0x00A5 ¤ |n 0x00A5 ¤");
     }
 
 }
