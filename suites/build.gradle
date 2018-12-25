@@ -32,3 +32,8 @@ task testGradleSuite(type: Test) {
         include "**/MyTestInGradleSuite.*"
     }
 }
+
+task printHi() {
+    print "Hi!"
+}
+
