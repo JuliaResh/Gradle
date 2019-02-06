@@ -10,6 +10,7 @@ public class MyDataProvider {
                 {"String with \n new line"},
                 {"String, with comma"},
                 {"String2, with comma"},
+                {"String3, with comma"},
                 {"String, with \"quotes\""},
         };
     }
