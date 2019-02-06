@@ -9,6 +9,7 @@ public class MyDataProvider {
         return new Object[][] {
                 {"String with \n new line"},
                 {"String, with comma"},
+                {"String2, with comma"},
                 {"String, with \"quotes\""},
         };
     }
