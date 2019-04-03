@@ -1,4 +1,4 @@
-if (project.hasProjecty("propertyTest") {
+if (project.hasProjecty("propertyTest")) {
    println propertyTest
 } else {
    println 'propertyTest property is not found'
