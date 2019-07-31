@@ -4,5 +4,3 @@ include 'kotlin'
 include 'teamcity-issue'
 include 'suites'
 include 'tests'
-
-println myParam
